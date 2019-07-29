@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>Learntech</title>
+		
+		<!-- import CSS -->
+		<link href="bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		
+		<!-- import jQuery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		
+	</head>	
+	<body>	
+		<a href="index.html"> <img src="photos/learntech.png" class="imgleft" alt="logo"/></a>
+		<div class="icon">
+			<h5 class="login"><a href="registrierung.html" class="login">Registrieren</a>&nbsp;&nbsp;<a href="" class="login">Login</a></h5> 
+		</div>
+		
+		<div class="container">
+
+		<!-- The bigImage -->
+		
+		<div class="row div-large-img">
+			<div class="col-md-12 ">
+				<img id="bigImage" 
+				  class="large-img" 
+				  src="photos/python.png" 
+				  alt="graffittied building"/>
+
+			<p  id="paragraph"> Python undoubtedly tops the list. It is widely accepted as the best programming language to learn first.
+			Python is fast, easy-to-use, and easy-to-deploy programming language that is being widely used to develop scalable web applications. 
+			YouTube, Instagram, Pinterest, SurveyMonkey are all built in Python. Python provides an excellent library support and has a large developer community.
+			The programming language provides a great starting point for beginners. Talking about those who are looking for a better job, 
+			you should definitely learn Python ASAP! A lot of startups are using Python as their primary backend stack and so, 
+			this opens up a huge opportunity for full-stack Python developers.</p>		
+			</div>
+			
+		</div>
+		<br>
+		<!-- The small images -->
+		
+		<div class="row crop-img-style">
+			<div class="col-md-3">
+				<img id="i1" class="crop-img" 
+				  src="photos/python.png" 
+				  alt="graffittied building"/> 
+			</div>
+			
+			<div class="col-md-3">
+				<img id="i2" class="crop-img" 
+				  src="photos/java.png" 
+				  alt="display of cheese"/> 
+			</div>
+			
+			<div class="col-md-3">
+				<img id="i3" class="crop-img" 
+				  src="photos/c.png" 
+				  alt="synethesizer workshop"/> 
+			</div>
+			
+			<div class="col-md-3">
+				<img id="i4" class="crop-img" 
+				   src="photos/javascript.png" 
+				   alt="City night"/> 
+			</div>
+			
+			<div class="col-md-3">
+				<img id="i5" class="crop-img" 
+				   src="photos/go.png" 
+				   alt="City night"/> 
+			</div>
+			
+			<div class="col-md-3">
+				<img id="i6" class="crop-img" 
+				   src="photos/r.png" 
+				   alt="City night"/> 
+			</div>
+			
+			<div class="col-md-3">
+				<img id="i7" class="crop-img" 
+				   src="photos/php.png" 
+				   alt="City night"/> 
+			</div>
+			
+		</div>	
+	</div>
+		
+		
+	<script >	
+		
+		<!-- Texte -->
+		
+		var i1 = `Python undoubtedly tops the list. It is widely accepted as the best programming language to learn first.
+			Python is fast, easy-to-use, and easy-to-deploy programming language that is being widely used to develop scalable web applications. 
+			YouTube, Instagram, Pinterest, SurveyMonkey are all built in Python. Python provides an excellent library support and has a large developer community.
+			The programming language provides a great starting point for beginners. Talking about those who are looking for a better job, 
+			you should definitely learn Python ASAP! A lot of startups are using Python as their primary backend stack and so, 
+			this opens up a huge opportunity for full-stack Python developers.`;
+		
+		var i2=`Java is another popular choice in large organizations and it has remained so for decades. 
+		Java is widely used for building enterprise-scale web applications. Java is known to be extremely stable and so, 
+		many large enterprises have adopted it. If you are looking for a development based job at a large organization, 
+		Java is the language that you should learn.
+		Java is also widely used in Android App Development. Almost any business today needs an Android Application owing to the fact that there are billions of Android users today. 
+		This opens up a huge opportunity for Java developers given the fact that Google has created an excellent Java-based Android development framework – Android Studio.`;
+		
+		var i3 =`C/C++ is like the bread and butter of programming. Almost all low-level systems such as operating systems,
+		file systems, etc are written in C/C++. If you wish to be a system-level programmer, C/C++ is the language you should learn.
+		C++ is also widely used by competitive programmers owing to the fact that it is extremely fast and stable.
+		C++ also provides something called as STL – Standard Template Library. STL is a pool of ready-to-use libraries for various data structures, 
+		arithmetic operations, and algorithms. The library support and speed of the language make it a popular choice in the High-frequency trading community as well.`;
+		
+		var i4 =`JavaScript is the “frontend” programming language. JavaScript is widely used to design interactive frontend applications.
+		For instance, when you click on a button which opens up a popup, the logic is implemented via JavaScript.
+		These days, many organizations, particularly startups, are using NodeJS which is a JavaScript-based run-time environment. 
+		Node.js lets developers use JavaScript for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user’s web browser. 
+		Hence now with JS, you can use a single programming language for server side and client side scripts. 
+		If you are looking for that cool tech job at your favorite startup, you should seriously consider learning JavaScript.`;
+		
+		var i5=`Go, also known as Golang, is a programming language built by Google.
+		Go provides excellent support for multithreading and so, 
+		it is being used by a lot of companies that rely heavily on distributed systems. 
+		Go is widely used in startups in Silicon Valley. However, it is yet to be adopted by Indian companies/startups. 
+		Those who wish to join a Valley-based startup specializing in core systems should master Golang.`;
+		
+		var i6 =`R programming language is one of the most commonly used programming languages for Data Analysis and Machine Learning. 
+		R provides an excellent framework and built-in libraries to develop powerful Machine Learning algorithms. 
+		R is also used for general statistical computing as well as graphics. R has been well adopted by enterprises. 
+		Those who wish to join “Analytics” team of a large organization should definitely learn R.`;
+		
+		var i7=`PHP is among the most popular backend programming language. 
+				Though PHP is facing a tough competition from Python and JavaScript, the market still needs a large number of PHP developers.
+				Those who wish to join a reasonably well old organization as a backend developer should aim to learn PHP programming.`;
+		
+		
+		<!-- function for the change the Photo and the text -->
+		
+		$(".crop-img").click(function(){
+			$("#bigImage").attr('src', 
+				$(this).attr('src'));
+		});
+		
+		$("#i1").click(function(){
+			document.getElementById("paragraph").innerHTML = i1;
+		});
+		
+		$("#i2").click(function(){
+			document.getElementById("paragraph").innerHTML = i2;
+		});
+		
+		$("#i3").click(function(){
+			document.getElementById("paragraph").innerHTML = i3;
+		});
+		
+		$("#i4").click(function(){
+			document.getElementById("paragraph").innerHTML = i4;
+		});
+		
+		$("#i5").click(function(){
+			document.getElementById("paragraph").innerHTML = i5;
+		});
+		
+		$("#i6").click(function(){
+			document.getElementById("paragraph").innerHTML = i6;
+		});
+		
+		$("#i7").click(function(){
+			document.getElementById("paragraph").innerHTML = i7;
+		});
+		
+		
+	</script>	
+		
+		
+				<br>	
+				
+		<div class="navi" style="margin-top:42px">
+		
+			<a href="https://www.facebook.com"><img src="photos/facebook.png" class="iconimg" alt="facebook"/></a>
+			<a href="https://www.youtube.com"><img src="photos/youtube.png" class="iconimg" alt="youtube"/></a>
+			<a href="https://www.twitter.com"><img src="photos/twitter.png" class="iconimg" alt="twitter"/></a>			 
+		
+			<h6 class="leereplatz">Copyright &copy; 2019 learntech, Inc.</h6>
+		</div>
+	</body>
+</html>
